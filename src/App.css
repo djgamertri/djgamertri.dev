@@ -1,0 +1,337 @@
+:root{
+  --Color-Background: #27272a;
+  --Color-Text: #ffff;
+  --Color-Button: #ffff;
+  --Color-Span: #03A9F4;
+  --Color-Hover: #18181b;
+  --Color-live: #90e32f;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('assets/Font/Rubik/Rubik-VariableFont_wght.ttf') format('truetype'); /* Ajusta la ruta de acuerdo a tu estructura de carpetas y el nombre del archivo de la fuente */
+}
+
+/* General Styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik';
+  font-size: 2.5rem;
+  background: var(--Color-Background);
+}
+
+main{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+span{
+  color: var(--Color-Span);
+}
+
+.Screen{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* Button */
+
+a{
+  text-decoration: none;
+}
+
+.Button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  margin: 20px;
+  font-size: .5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: var(--Color-Button);
+}
+
+.Button svg{
+  width: 35px;
+  background: none;
+  margin: 0 10px 0 0;
+}
+
+.Button path{
+  fill: var(--Color-Background);
+}
+
+.Button:hover path{
+  fill: var(--Color-Button);
+}
+
+.Button:hover{
+  cursor: pointer;
+  color: var(--Color-Text);
+  background: var(--Color-Hover);
+  -webkit-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.42);
+  box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.42);
+}
+
+/* Me */
+
+.Me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  font-weight: bold;
+  color: var(--Color-Text);
+}
+
+/* About Me */
+
+.AboutMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  font-weight: bold;
+  text-align: left;
+  color: var(--Color-Text);
+}
+
+.AboutMeText{
+  width: 40%;
+}
+
+.AboutMe p{
+  margin: 10px 10px 0 0;
+  font-size: .6rem;
+}
+
+.AboutMe h1{
+  font-size: 1rem;
+}
+
+.AboutMe svg{
+  width: 40%;
+}
+
+/* Projects */
+
+.Projects{
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  text-align: left;
+  color: var(--Color-Text);
+}
+
+.ProjectsSlider{
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  height: 50%;
+}
+
+.ProjectText{
+  width: 40%;
+}
+
+.ProjectButton{
+  display: flex;
+  gap: 16px;
+}
+
+.ProjectItem {
+  flex: 0 0 100%;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  min-width: 100%;
+}
+
+.Projects p{
+  font-size: .6rem;
+}
+
+.Projects img {
+  width: 600px;
+}
+
+.ProjectText button{
+  margin: 20px 0 0 0;
+}
+
+.ProjectText h1{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.ProjectText p{
+  font-weight: 500;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  width: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  color: var(--Color-Text);
+  background-color: var(--Color-Hover);
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+.live{
+  color: var(--Color-Text);
+  background: var(--Color-Hover);
+}
+
+.live path{
+  fill: var(--Color-Text);
+}
+
+.live:hover {
+  color: var(--Color-Background);
+  background: var(--Color-Text);
+}
+
+.live:hover path{
+  fill: var(--Color-Background);
+}
+
+/* Contact */
+
+.Form{
+  height: 100%;
+  display: flex;
+  text-align: left;
+  color: var(--Color-Text);
+  font-weight: 400;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Form input{
+  color: var(--Color-Text);
+  font-weight: 500;
+  font-size: .5rem;
+  margin: 10px 0 10px 0 ;
+  border: 1px solid var(--Color-Text);
+  padding: 20px 20px 20px 20px;
+}
+
+.Form textarea{
+  padding: 20px 20px 20px 20px;
+  border: 1px solid var(--Color-Text);
+  color: var(--Color-Text);
+  font-weight: 500;
+  font-size: .5rem;
+  min-height: 100px;
+}
+
+.Form label{
+  text-align: left;
+  font-size: .6rem;
+  margin: 10px 0 10px 0;
+}
+
+.FormContent{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.FormContent button{
+  width: 140px;
+  margin: 30px 0 0 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ProjectItem{
+    flex-direction: column;
+  }
+  .ProjectsSlider{
+    text-align: center;
+    height: 100%;
+  }
+  .Projects img{
+    width: 80%;
+  }
+  .ProjectText{
+    width: 90%;
+  }
+  .ProjectButton{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Me{
+    flex-direction: column;
+  }
+  .MeText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutMe{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .AboutMeText{
+    width: 90%;
+  }
+  .Form > h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  *{
+    font-size: 2rem;
+  }
+  .FormContent{
+    width: 90%;
+    margin-top: 20px;
+  }
+  .prev-button, .next-button{
+    opacity: .4;
+  }
+  .FormContent{
+    height: 100%;
+  }
+  .MeText h1, span{
+    font-size: 1.2rem;
+  }
+  .Projects > h1{
+    font-size: 1.2rem;
+  }
+  .Form > h1{
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+}
