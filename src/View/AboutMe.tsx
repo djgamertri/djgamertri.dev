@@ -1,15 +1,16 @@
 import Screen from '../Components/Screen'
-import Cube from '../assets/Cube'
+import Cube from '../assets/Cube.png'
+import { Titles, Aboutme } from '../Components/DataEn'
 
-function AboutMe() {
+function AboutMe () {
   return (
     <Screen>
         <div className='AboutMe'>
             <div className='AboutMeText'>
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sed rerum laborum beatae dolores, accusamus neque veniam cupiditate praesentium quasi. Quidem quia quibusdam, doloribus eveniet dolorum beatae aliquid nam vel.</p>
+                <h1>{ Titles.Aboutme }</h1>
+                <p>{ Aboutme.text }</p>
             </div>
-            <Cube />
+            <img src={Cube} alt="Minecraft-Cube" />
         </div>
     </Screen>
   )

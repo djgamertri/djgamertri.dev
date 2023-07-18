@@ -17,8 +17,9 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Rubik';
   font-size: 2.5rem;
+  font-display: swap;
+  font-family: 'Rubik', sans-serif;
   background: var(--Color-Background);
 }
 
@@ -41,14 +42,17 @@ span{
 
 a{
   text-decoration: none;
+  color: var(--Color-Background);
+  width: 140px;
 }
 
 .Button{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   border: none;
-  margin: 20px;
+  margin: 40px 0 0 0;
   font-size: .5rem;
   font-weight: 500;
   border-radius: 5px;
@@ -91,6 +95,10 @@ a{
   color: var(--Color-Text);
 }
 
+.Me img{
+  width: 30%  ;
+}
+
 /* About Me */
 
 .AboutMe{
@@ -110,14 +118,14 @@ a{
 
 .AboutMe p{
   margin: 10px 10px 0 0;
-  font-size: .6rem;
+  font-size: .5rem;
 }
 
 .AboutMe h1{
   font-size: 1rem;
 }
 
-.AboutMe svg{
+.AboutMe img{
   width: 40%;
 }
 
@@ -144,7 +152,7 @@ a{
 }
 
 .ProjectText{
-  width: 40%;
+  width: 50%;
 }
 
 .ProjectButton{
@@ -162,6 +170,10 @@ a{
   min-width: 100%;
 }
 
+.Projects h1{
+  font-size: 1.2rem;
+}
+
 .Projects p{
   font-size: .6rem;
 }
@@ -176,10 +188,11 @@ a{
 
 .ProjectText h1{
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .ProjectText p{
+  font-size: .5rem;
   font-weight: 500;
 }
 
@@ -204,21 +217,21 @@ a{
   right: 20px;
 }
 
-.live{
+.dark{
   color: var(--Color-Text);
   background: var(--Color-Hover);
 }
 
-.live path{
+.dark path{
   fill: var(--Color-Text);
 }
 
-.live:hover {
+.dark:hover {
   color: var(--Color-Background);
   background: var(--Color-Text);
 }
 
-.live:hover path{
+.dark:hover path{
   fill: var(--Color-Background);
 }
 
@@ -233,6 +246,10 @@ a{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.Form > h1 {
+  font-size: 50px;
 }
 
 .Form input{
@@ -261,7 +278,7 @@ a{
 
 .FormContent{
   display: flex;
-  width: 50%;
+  width: 40%;
   flex-direction: column;
 }
 
@@ -297,6 +314,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .Me img {
+    width: 50%;
   }
   .AboutMe{
     flex-direction: column-reverse;

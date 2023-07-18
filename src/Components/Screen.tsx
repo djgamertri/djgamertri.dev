@@ -1,10 +1,10 @@
-import {ReactNode} from 'react'
+import { type ReactNode } from 'react'
 
 interface Props {
-    children: ReactNode
+  children: ReactNode
 }
 
-function Screen({ children }: Props) {
+function Screen ({ children }: Props) {
   return (
     <div className='Screen'>
         {children}

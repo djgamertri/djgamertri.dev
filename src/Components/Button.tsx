@@ -1,15 +1,15 @@
-import {ReactNode} from 'react'
+import { type ReactNode } from 'react'
 
-interface Props{
-    Img?: ReactNode,
-    Text: string,
-    Class?: string,
-    Link: string
+interface Props {
+  Img?: ReactNode
+  Text: string
+  Class?: string
+  Link: string
 }
 
-function Button({Img, Text, Class, Link}:Props) {
+function Button ({ Img, Text, Class, Link }: Props) {
   return (
-    <a href={Link}><button className={`Button ${Class || ''}`}>{Img}{Text}</button></a>
+    <a href={Link} className={`Button ${Class ?? ''}`}>{Img}{Text}</a>
   )
 }
 

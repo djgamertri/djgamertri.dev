@@ -1,12 +1,13 @@
 import Screen from '../Components/Screen'
 import Button from '../Components/Button'
 import PaperPlane from '../assets/Paperplane'
+import { Titles } from '../Components/DataEn'
 
-function Contact() {
+function Contact () {
   return (
     <Screen>
         <form action="https://formbold.com/s/3A2LR" method='POST' className='Form'>
-            <h1>Contact</h1>
+            <h1>{Titles.Contact}</h1>
             <div className='FormContent'>
                 <label htmlFor="Name">Full Name</label>
                 <input type="text" id='Name' placeholder='Full Name'/>

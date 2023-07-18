@@ -3,7 +3,7 @@ import Button from '../Components/Button'
 import Avatar from '../assets/Proile.png'
 import Github from '../assets/Github'
 
-function Me() {
+function Me () {
   return (
     <Screen>
         <div className='Me'>

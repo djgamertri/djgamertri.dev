@@ -4,7 +4,7 @@ import AboutMe from './View/AboutMe'
 import Projects from './View/Projects'
 import Contact from './View/Contact'
 
-function App() {
+function App () {
   return (
     <main>
       <Me/>
